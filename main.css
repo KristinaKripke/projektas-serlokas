@@ -8,11 +8,15 @@ body {
     text-align: center;
 }
 main {
-    width: 100%;
+    --w: 800px;
+    display: inline-block;
+    width: var(--w);
+    margin: 10px calc((100% - var(--w)) / 2) 0;
 }
 .left_column {
     width: 30%;
     float: left;
+    margin-right: 50px;
 }
 .text {
     width: 40%;
